@@ -142,6 +142,8 @@ body {
   width: 598px;
   min-width: 598px;
   border-right: 1px solid #3a4f64;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout .content .header {
@@ -250,8 +252,13 @@ body {
 
 .layout .content .line {
   height: 10px;
+  min-height: 10px;
   border-bottom: 1px solid #3a4f64;
   background: rgb(25, 39, 52);
+}
+
+.layout .content .timeline  {
+  overflow: auto;
 }
 
 .layout .content .timeline .post-wrapper {
@@ -260,7 +267,13 @@ body {
 
 .layout .content .timeline .post {
   display: flex;
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.layout .content .timeline .post:hover {
+  background: rgb(37, 51, 65, 0.5);
 }
 
 .layout .content .timeline .post img {
