@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: #15202b;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+}
+
+.layout .menu {
+  width: 373px;
+  min-width: 373px;
+  border-right: 1px solid #3a4f64;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.layout .menu .menu-items {
+  width: 60%;
+  flex: 1;
+}
+
+.layout .menu .menu-items ul li {
+  margin-bottom: 25px;
+}
+
+.layout .menu .menu-items ul li.logo a {
+  font-size: 15px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  box-sizing: border-box;
+}
+
+.layout .menu .menu-items ul li.logo a i {
+  width: 40px;
+}
+
+.layout .menu .menu-items ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 39px;
+}
+
+.layout .menu .menu-items ul li.button a {
+  background: rgb(133, 133, 224);
+  display: block;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 15px;
+}
+.layout .menu .menu-items ul li.button a:hover {
+  background: rgb(106, 106, 179);
+  color: #fff;
+}
+
+.layout .menu .menu-items ul li.circle a:hover > i,
+.layout .menu .menu-items ul li a:hover {
+  background: rgb(28, 42, 56);
+  color: rgb(129, 129, 255);
+  transition: 0.2s all ease-in-out;
+  border-color: rgb(129, 129, 255);
+}
+
+.layout .menu .menu-items ul li.current a {
+  color: rgb(129, 129, 255);
+}
+
+.layout .menu .menu-items ul li a i {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.layout .menu .menu-items ul li.circle a i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.layout .menu .menu-items ul li a span {
+  margin-left: 15px;
+}
+
+.layout .menu .profile {
+  display: flex;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 60px;
+  padding: 0 15px;
+}
+
+.layout .menu .profile:hover {
+  background: rgb(28, 42, 56);
+  transition: 0.2s all ease-in-out;
+}
+
+.layout .menu .profile img {
+  width: 39px;
+  height: 39px;
+  border-radius: 39px;
+  margin-right: 10px;
+}
+
+.layout .menu .profile .user span.name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.layout .menu .profile .user span.username {
+  color: #999;
+}
+
+.layout .menu .profile i {
+  color: #fff;
+}
+
+.layout .content {
+  width: 598px;
+  min-width: 598px;
+  border-right: 1px solid #3a4f64;
+}
+
+.layout .content .header {
+  height: 53px;
+  min-height: 53px;
+  border-bottom: 1px solid #3a4f64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.layout .content .header span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.layout .content .header i {
+  font-size: 20px;
+  color: rgb(129, 129, 255);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.2s all ease-in-out;
+}
+
+.layout .content .header i:hover {
+  background: rgb(28, 42, 56);
+}
+
+.layout .content .share {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #3a4f64;
+  height: 118px;
+  min-height: 118px;
+  box-sizing: border-box;
+}
+
+.layout .content .share img {
+  width: 49px;
+  height: 49px;
+  border-radius: 49px;
+  margin-right: 15px;
+}
+
+.layout .content .share .input {
+  flex: 1;
+}
+
+.layout .content .share .input input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 49px;
+  background: #15202b;
+  font-size: 20px;
+  color: #fff;
+}
+
+.layout .content .share .input .actions {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.layout .content .share .input .actions .items {
+  flex: 1;
+}
+
+.layout .content .share .input .actions .items ul {
+  display: flex;
+}
+
+.layout .content .share .input .actions .items ul li {
+  margin-right: 5px;
+}
+
+.layout .content .share .input .actions .items ul li a {
+  color: rgb(129, 129, 255);
+  font-size: 20px;
+  padding: 10px 13px;
+  border-radius: 50%;
+  transition: 0.2s all ease-in-out;
+}
+
+.layout .content .share .input .actions .items ul li a:hover {
+  background: rgb(28, 42, 56);
+}
+
+.layout .content .share .input .actions a.button {
+  background: rgb(133, 133, 224);
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 25px;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+.layout .content .share .input .actions a.button:hover {
+  background: rgb(106, 106, 179);
+  color: #fff;
+}
+
+.layout .content .line {
+  height: 10px;
+  border-bottom: 1px solid #3a4f64;
+  background: rgb(25, 39, 52);
+}
+
+.layout .sidebar {
+  flex: 1;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 1900px) {
+  .layout .menu {
+    width: 602px;
+    min-width: 602px;
+  }
+
+  .layout .menu .menu-items {
+    margin-left: auto;
+    width: 49%;
+    min-width: 49%;
+  }
+
+  .layout .menu .menu-items ul li.button a {
+    width: 230px;
+    min-width: 230px;
+  }
+
+  .layout .menu .profile {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 49%;
+    min-width: 49%;
+  }
+
+  .layout .content {
+    width: 598px;
+    min-width: 598px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .layout .menu .menu-items {
+    margin: 0 auto;
+  }
+
+  .layout .menu .profile {
+    margin: 0 auto;
+    width: 58%;
+    min-width: 58%;
+  }
+}
