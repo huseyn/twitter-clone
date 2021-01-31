@@ -462,6 +462,7 @@ body {
 .layout .sidebar .items .news {
   background: #1b2631;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .layout .sidebar .items .news .news-header {
@@ -519,6 +520,85 @@ body {
   font-size: 14px;
 }
 
+.layout .sidebar .items .follow {
+  background: #1b2631;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.layout .sidebar .items .follow .follow-header {
+  border-bottom: 1px solid #3a4f64;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.layout .sidebar .items .follow ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #3a4f64;
+  cursor: pointer;
+}
+
+.layout .sidebar .items .follow ul li:hover {
+  background: rgb(37, 51, 65, 0.5);
+  transition: 0.3s all ease-in-out;
+}
+
+.layout .sidebar .items .follow ul li .user {
+  display: flex;
+  align-items: center;
+}
+
+.layout .sidebar .items .follow ul li .user img {
+  width: 49px;
+  height: 49px;
+  border-radius: 49px;
+  margin-right: 10px;
+}
+
+.layout .sidebar .items .follow ul li .user .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout .sidebar .items .follow ul li .user .user-info .name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.layout .sidebar .items .follow ul li .user .user-info .name:hover {
+  text-decoration: underline;
+}
+
+.layout .sidebar .items .follow ul li .user .user-info .username {
+  color: #999;
+  font-size: 14px;
+}
+
+.layout .sidebar .items .follow ul li > a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid rgb(129, 129, 255);
+  color: rgb(129, 129, 255);
+  border-radius: 15px;
+}
+
+.layout .sidebar .items .follow .follow-footer {
+  padding: 10px;
+}
+
+.layout .sidebar .items .follow .follow-footer a {
+  color: rgb(129, 129, 255);
+  font-size: 14px;
+}
+
 /* Responsive design */
 @media only screen and (min-width: 1900px) {
   .layout .menu {
@@ -552,11 +632,14 @@ body {
   .layout .sidebar {
     width: 718px;
     min-width: 718px;
+    display: flex;
+    flex-direction: column;
   }
 
   .layout .sidebar .items {
     width: 50%;
     margin: 5px auto 0 20px;
+    overflow: auto;
   }
 }
 
@@ -574,10 +657,13 @@ body {
   .layout .sidebar {
     width: 424px;
     min-width: 424px;
+    display: flex;
+    flex-direction: column;
   }
 
   .layout .sidebar .items {
     width: 75%;
+    overflow: auto;
   }
 
   .layout .sidebar .items {
