@@ -427,10 +427,6 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
-.layout .sidebar .items {
-  width: 75%;
-}
-
 .layout .sidebar .items .search {
   position: relative;
   margin-bottom: 10px;
@@ -557,6 +553,11 @@ body {
     width: 718px;
     min-width: 718px;
   }
+
+  .layout .sidebar .items {
+    width: 50%;
+    margin: 5px auto 0 20px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -573,6 +574,10 @@ body {
   .layout .sidebar {
     width: 424px;
     min-width: 424px;
+  }
+
+  .layout .sidebar .items {
+    width: 75%;
   }
 
   .layout .sidebar .items {
