@@ -24,8 +24,8 @@ body {
 }
 
 .layout .menu {
-  width: 373px;
-  min-width: 373px;
+  width: 320px;
+  min-width: 320px;
   border-right: 1px solid #3a4f64;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
 }
 
 .layout .menu .menu-items ul li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .layout .menu .menu-items ul li.logo a {
@@ -257,7 +257,7 @@ body {
   background: rgb(25, 39, 52);
 }
 
-.layout .content .timeline  {
+.layout .content .timeline {
   overflow: auto;
 }
 
@@ -427,8 +427,39 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
-.layout .sidebar {
-  flex: 1;
+.layout .sidebar .items {
+  width: 75%;
+}
+
+.layout .sidebar .items .search {
+  position: relative;
+}
+
+.layout .sidebar .items .search input {
+  width: 100%;
+  height: 38px;
+  background: #253341;
+  border-radius: 30px;
+  padding: 0 10px 0 45px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.layout .sidebar .items .search input:focus {
+  border: 1px solid rgb(129, 129, 255);
+}
+
+.layout .sidebar .items .search i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  color: #999;
 }
 
 /* Responsive design */
@@ -460,6 +491,11 @@ body {
     width: 598px;
     min-width: 598px;
   }
+
+  .layout .sidebar {
+    width: 718px;
+    min-width: 718px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -469,7 +505,16 @@ body {
 
   .layout .menu .profile {
     margin: 0 auto;
-    width: 58%;
-    min-width: 58%;
+    width: 65%;
+    min-width: 65%;
+  }
+
+  .layout .sidebar {
+    width: 424px;
+    min-width: 424px;
+  }
+
+  .layout .sidebar .items {
+    margin: 5px auto 0;
   }
 }
