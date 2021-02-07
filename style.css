@@ -599,6 +599,30 @@ body {
   font-size: 14px;
 }
 
+/*
+  PROFILE PAGE
+*/
+
+.layout .content .header .arrow-back {
+  margin-right: 20px;
+}
+
+.layout .content .user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.layout .content .user-info .username {
+  margin-bottom: 4px;
+}
+
+.layout .content .user-info .tweet-count {
+  color: rgba(255, 255, 255, .3);
+  font-size: 14px;
+}
+
 /* Responsive design */
 @media only screen and (min-width: 1900px) {
   .layout .menu {
