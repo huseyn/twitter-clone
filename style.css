@@ -619,8 +619,156 @@ body {
 }
 
 .layout .content .user-info .tweet-count {
-  color: rgba(255, 255, 255, .3);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
+}
+
+.layout .content .profile-info {
+  border-bottom: 1px solid #3a4f64;
+}
+
+.layout .content .profile-info .cover-img {
+  margin-bottom: 10px;
+}
+
+.layout .content .profile-info .cover-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  min-height: 200px;
+  background-size: cover;
+}
+
+.layout .content .profile-info .edit-profile {
+  display: flex;
+}
+
+.layout .content .profile-info .edit-profile {
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.layout .content .profile-info .edit-profile img {
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  border: 5px solid #111;
+  position: absolute;
+  top: 180px;
+  transition: 300ms all;
+}
+
+.layout .content .profile-info .edit-profile img:hover {
+  background: #111;
+  opacity: 0.9;
+}
+
+.layout .content .profile-info .edit-profile .btn {
+  margin-left: auto;
+  display: block;
+  width: 107px;
+  height: 49px;
+  text-align: center;
+  line-height: 49px;
+  border: 1px solid rgb(129, 129, 255);
+  color: rgb(129, 129, 255);
+  border-radius: 49px;
+  padding: 0 15px;
+  transition: 200ms all;
+}
+
+.layout .content .profile-info .edit-profile .btn:hover {
+  background: rgb(37, 51, 65, 0.5);
+}
+
+.layout .content .profile-info .user-info {
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.layout .content .profile-info .user-info .name {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.layout .content .profile-info .user-info .username {
+  font-size: 15px;
+  color: #6e767d;
+  margin-bottom: 10px;
+}
+
+.layout .content .profile-info .user-info .bio {
+  font-size: 15px;
+  color: #d9d9d9;
+  margin-bottom: 15px;
+}
+
+.layout .content .profile-info .user-info .bio-more {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.layout .content .profile-info .user-info .bio-more > div {
+  margin-right: 15px;
+}
+
+.layout .content .profile-info .user-info .bio-more > div {
+  color: #6e767d;
+  font-size: 15px;
+}
+
+.layout .content .profile-info .user-info .bio-more > div.website a {
+  color: #1da1f2;
+  font-size: 15px;
+}
+
+.layout .content .profile-info .user-info .calendar {
+  color: #6e767d;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.layout .content .profile-info .user-info .follow-info {
+  display: flex;
+}
+
+.layout .content .profile-info .user-info .follow-info a {
+  margin-right: 20px;
+}
+
+.layout .content .profile-info .user-info .follow-info a {
+  color: #6e767d;
+}
+
+.layout .content .profile-info .user-info .follow-info > a .count {
+  color: #fff;
+  font-weight: 700;
+}
+.layout .content .profile-info .profile-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout .content .profile-info .profile-menu ul li {
+  width: 25%;
+  min-width: 25%;
+  text-align: center;
+}
+
+.layout .content .profile-info .profile-menu ul li:hover {
+  border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.layout .content .profile-info .profile-menu ul li a {
+  font-size: 16px;
+  color: #6e767d;
+  width: 138px;
+  height: 52px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive design */
